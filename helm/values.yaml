@@ -14,7 +14,7 @@ gateway:
   hostname: "kbot.example.com"
   parentGateway: "eg"
   weight: 1
-  path: /prod
+  path: /
 
 dns:
   nameservers:
