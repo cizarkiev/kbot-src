@@ -21,7 +21,7 @@ dns:
   nameservers:
     - "1.1.1.1"
 secretName: kbot
-telegramTokenKey: token
+telegramTokenKey: tokeni
 
 filters:
   filters:
