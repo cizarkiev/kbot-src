@@ -21,7 +21,7 @@ test: lint
 	go test -v
 
 build: format
-	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=$(shell dpkg --print-architecture) go build -v -o kbot -ldflags "-X="github.com/${REGESTRY}/kbot/cmd.appVersion=${VERSION}
+	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=$(shell dpkg --print-architecture) go build -v -o kbot -ldflags "-X="github.com/cizarkeiv/kbot/cmd.appVersion=${VERSION}
 
 image:
 	docker build . -t ${REGESTRY}/${APP}:${VERSION}-${TARGETARCH} --no-cache --build-arg TARGETOS=${TARGETOS} --build-arg TARGETARCH=${TARGETARCH}
